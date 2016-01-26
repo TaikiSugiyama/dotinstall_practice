@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box      = "ubuntu/trusty64"
+
+  config.vm.hostname = "16-engineers-box"
+  config.vm.network "private_network", ip: "192.168.33.16"
+
+  config.vm.synced_folder "sync/", "/srv/sync", create: true
+
+  config.vm.provision "shell", inline: <<-CMD
+    sudo apt-get update \\
+    && sudo apt-get install -y ruby2.0 git \\
+    && sudo gem2.0 i itamae --no-rdoc --no-ri
+  CMD
+end
