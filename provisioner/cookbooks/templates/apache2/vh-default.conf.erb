@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+    DocumentRoot <%= @document_root %>
+    ServerName   <%= @server_name %>:80
+
+    LogLevel debug
+
+    ErrorLog  ${APACHE_LOG_DIR}/<%= @server_name %>.error.log
+    CustomLog ${APACHE_LOG_DIR}/<%= @server_name %>.access.log combined
+
+    <Directory <%= @document_root %>>
+        Options All
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
