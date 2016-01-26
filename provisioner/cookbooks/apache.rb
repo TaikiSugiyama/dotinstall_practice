@@ -11,6 +11,13 @@ directory "/srv/www" do
   action :create
 end
 
+template "/srv/www/index.php" do
+  owner  "vagrant"
+  mode   "0755"
+  action :create
+  source "templates/apache2/hello.php.erb"
+end
+
 directory "/var/log/apache2" do
   mode   "0755"
   action :create
