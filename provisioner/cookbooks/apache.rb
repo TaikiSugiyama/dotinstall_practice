@@ -7,7 +7,12 @@
 end
 
 directory "/srv/www" do
-  mode   "777"
+  mode   "0777"
+  action :create
+end
+
+directory "/var/log/apache2" do
+  mode   "0755"
   action :create
 end
 
