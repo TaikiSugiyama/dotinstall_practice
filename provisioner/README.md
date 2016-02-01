@@ -70,3 +70,29 @@ Vagrant Box の環境構築を実行する
     Hello from PHP!
 
 と表示されたら成功です。
+
+
+Vagrant Box で PHP のコードを実行する
+-------------------------------------
+
+    cd /srv/www
+
+を実行して、 `/srv/www` ディレクトリに移動してみてください。
+ここにある "index.php" というのが、先ほど表示された "Hello from PHP!" のプログラム本体です。
+
+試しに、
+
+    php index.php
+
+を実行してみましょう。
+
+```html
+<!doctype html>
+<html lang="en">
+<body>
+  <h1>Hello from PHP!</h1>
+</body>
+</html>
+```
+
+と表示されたら成功です。
