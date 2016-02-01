@@ -86,11 +86,14 @@ PC 上で CLI (Command Line Interface) を開き、このリポジトリをク�
 Vagrant Box へのログイン
 ------------------------
 
-起動された Vagrant Box には、 SSH からログインできます。
+* IP Address
+  * 192.168.33.16
+* User name
+  * vagrant
+* Password
+  * vagrant
 
-| **IP Address** | 192.168.33.16 |
-| **User Name**  | vagrant       |
-| **Password**   | vagrant       |
+起動された Vagrant Box には、 SSH からログインできます。
 
 + Mac OS:
     + `ssh -l vagrant 192.168.33.16`
