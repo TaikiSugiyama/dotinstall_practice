@@ -1,9 +1,5 @@
-%w{
-  apache2
-}.each do |pkg|
-  package pkg do
-    action :install
-  end
+package 'apache2' do
+  action :install
 end
 
 directory "/srv/www" do
