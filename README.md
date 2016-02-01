@@ -28,7 +28,7 @@ Vagrant Box
         + [Git for Windows](https://git-for-windows.github.io/)
 + SSH を扱えるターミナルエミュレータ
     + Mac OS:
-        + OS 標準の Terminal.app か、 [iTerms](https://www.iterm2.com/)
+        + OS 標準の Terminal.app か、 [iTerm2](https://www.iterm2.com/)
     + Windows OS:
         + [Tera Term](https://osdn.jp/projects/ttssh2/) など
 
