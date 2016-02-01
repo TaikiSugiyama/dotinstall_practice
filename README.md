@@ -8,8 +8,8 @@ Vagrant Box
 --------------------------
 
 1. Vagrant Box の作成と Box へのログイン (いまここ)
-2. Vagrant Box 内で環境構築
-3. Vagrant Box 内でドットインストールの教材を使った勉強
+2. Vagrant Box 上で環境構築
+3. Vagrant Box の終了
 
 
 準備すること
