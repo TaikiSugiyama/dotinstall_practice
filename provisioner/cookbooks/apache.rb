@@ -13,7 +13,7 @@ end
 
 template "/srv/www/index.php" do
   owner  "vagrant"
-  mode   "0755"
+  mode   "0644"
   action :create
   source "templates/apache2/hello.php.erb"
 end
