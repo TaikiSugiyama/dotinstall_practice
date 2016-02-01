@@ -78,6 +78,10 @@ Vagrant Box で PHP のコードを実行する
     cd /srv/www
 
 を実行して、 `/srv/www` ディレクトリに移動してみてください。
+
+    ls
+
+を実行すると、このディレクトリにあるファイルが表示されます。
 ここにある "index.php" というのが、先ほど表示された "Hello from PHP!" のプログラム本体です。
 
 試しに、
@@ -140,3 +144,14 @@ Vagrant Box でドットインストールの教材を使って勉強する
 
 (おそらく) これで勉強を始める準備は整いました。
 ドットインストールのレッスンをはじめましょう！！！！！
+
+* Git 入門
+    * http://dotinstall.com/lessons/basic_git
+* PHP を使ってみよう
+    * http://dotinstall.com/lessons/basic_php_v2/34101
+* MySQL 入門
+    * http://dotinstall.com/lessons/basic_mysql_v2
+* PHP データベース入門
+    * http://dotinstall.com/lessons/basic_php_db
+
+わからないことがあったら、 Slack で先輩たちに聞いてみてください！！
