@@ -1,8 +1,7 @@
 Vagrant Box
 ===========
 
-このディレクトリは、 16 新卒エンジニア研修で使う **仮想 Linux 環境 (Vagrant Box) 作成** するために使います。
-Vagrant Box 作成後は、 `provisioner` のディレクトリに進んでください。
+このディレクトリは、 **PC 上に仮想 Linux 環境 (Vagrant Box) 作成** するために使います。
 
 
 これからおこなうことの流れ
@@ -104,7 +103,7 @@ Vagrant Box へのログイン
 Vagrant Box の環境構築
 ----------------------
 
-Vagrant Box にログインした状態でおこないますので、 SSH からログインした後、 `provisioner` ディレクトリの README を開いてください。
+Vagrant Box にログインした状態でおこないますので、 SSH からログインした後、 `provisioner` ディレクトリの [README](provisioner/README.md) を開いてください。
 
 
 Vagrant Box の終了
