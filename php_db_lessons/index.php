@@ -10,13 +10,11 @@ try{
 	$db = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	/*
-	(1)exec():結果を返さない,安全なSQL
-	(2)query():結果を返す、安全、何回も実行されないSQL
-	(3)prepare():結果を返す、安全対策が必要、複数回実行されるSQL
-	*/
-	$stmt->db->prepare("insert into users (name, score) values(?,?)");
-	$stmt->execute(['sugiyama',44]);
+	
+	//$stmt->db->prepare("insert into users (name, score) values(?,?)");
+	//$stmt->execute(['sugiyama',44]);
+	$stmt->db->prepare("insert into users (name, score) values(:name,:score)");
+        $stmt->execute([':name' =>'sato',':score'=>80]);
 	echo "inserted: ".$db->lastInsertId();	
 
 }catch(PDOException $e){
