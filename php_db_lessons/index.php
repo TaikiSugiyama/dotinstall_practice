@@ -9,26 +9,13 @@ try{
 	//connect
 	$db = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-	//insert
-	//bindValue
-	$stmt = $db->prepare("insert into users (name, score) values(?,?)");
-        $name = 'sugiyama';
-	$stmt->bindValue(1, $name,PDO::PARAM_STR);
-	//$score = 23;
-        //$stmt->bindValue(2, $score,PDO::PARAM_INT);
-       	//$stmt->excute();
-	//$score = 44;
-        //$stmt->bindValue(2,$score,PDO::PARAM_INT);
-        //$stmt->execute();
-
-	$stmt->bindParam(2,$score,PDO::PARAM_INT);
-        $score = 52;
-        $stmt->execute();
-        $score = 44;
-        $stmt->execute();
-        $score = 6;
-        $stmt->execute();
+	//select all
+        $stmt = $db->query("select * from users");
+        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach($users as $user){
+                var_dump($user);
+        }
+        echo $stmt->rowCount()."records found.";
 }catch(PDOException $e){
 	echo $e->getMessage();
 	exit;
