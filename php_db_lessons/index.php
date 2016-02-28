@@ -11,7 +11,7 @@ try{
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	//update
         $stmt = $db->prepare("update users set score = :score where name = :name");
-        $stmt->excute([
+        $stmt->execute([
                 'score'=>100,
                 ':name'=>'taguchi'
         ]);
